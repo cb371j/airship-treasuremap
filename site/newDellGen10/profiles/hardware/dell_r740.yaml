@@ -56,7 +56,7 @@ data:
      bus_type: 'scsi'
    ephemeral:
      # /dev/sdc
-    address: '0:2.2.0'
+     address: '0:2.2.0'
      dev_type: 'Internal RAID-6 HDDs'
      bus_type: 'scsi'
  cpu_sets:
