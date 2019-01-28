@@ -36,8 +36,6 @@ data:
       slaves:
         - data_nic01
         - data_nic02
-        - data_nic03
-        - data_nic04
       networks:
         - oam
         - storage
@@ -122,7 +120,7 @@ data:
       openstack-neutron: enabled
       openvswitch: enabled
       ucp-barbican: enabled
-      # ceph-mon: enabled
+      ceph-mon: enabled
       ceph-mgr: enabled
       ceph-osd: enabled
       ceph-mds: enabled
@@ -135,13 +133,13 @@ data:
       tenant-ceph-mgr: enabled
       kubernetes-apiserver: enabled
       kubernetes-controller-manager: enabled
-      # kubernetes-etcd: enabled
+      kubernetes-etcd: enabled
       kubernetes-scheduler: enabled
       tiller-helm: enabled
-      # kube-etcd: enabled
+      kube-etcd: enabled
       calico-policy: enabled
       calico-node: enabled
-      # calico-etcd: enabled
+      calico-etcd: enabled
       ucp-armada: enabled
       ucp-drydock: enabled
       ucp-deckhand: enabled
