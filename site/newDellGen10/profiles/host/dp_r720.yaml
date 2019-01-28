@@ -5,7 +5,7 @@
 schema: drydock/HostProfile/v1
 metadata:
   schema: metadata/Document/v1
-  name: dp_r740
+  name: dp_r720
   storagePolicy: cleartext
   layeringDefinition:
     abstract: false
@@ -20,7 +20,7 @@ metadata:
       - method: merge
         path: .
 data:
-  hardware_profile: dell_r740
+  hardware_profile: dell_purley_r740
   primary_network: oam
   interfaces:
     pxe:

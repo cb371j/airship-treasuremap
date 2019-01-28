@@ -86,6 +86,7 @@ data:
   masters:
     - hostname: aknode41
     - hostname: aknode42
+    - hostname: aknode43
 
   # NEWSITE-CHANGEME: Environment proxy information.
   # NOTE: Reference Airship sites do not deploy behind a proxy, so this proxy section
