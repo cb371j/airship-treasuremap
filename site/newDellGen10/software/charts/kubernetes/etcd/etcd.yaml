@@ -37,12 +37,6 @@ metadata:
         path: .masters[1].hostname
       dest:
         path: .values.nodes[2].name
-    - src:
-        schema: pegleg/CommonAddresses/v1
-        name: common-addresses
-        path: .masters[2].hostname
-      dest:
-        path: .values.nodes[3].name
 
     # Certificate substitutions for the node names assembled on the above list.
     # NEWSITE-CHANGEME: Per above, the number of substitutions should not need
