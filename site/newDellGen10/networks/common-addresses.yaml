@@ -26,14 +26,14 @@ data:
       # etcd service IP address
       service_ip: 10.96.232.136
 
-    ip_rule:
-      gateway: 172.29.0.1
+    #ip_rule:
+    #  gateway: 172.29.0.1
 #    bgp:
 #      ipv4:
 #        public_service_cidr: 172.29.1.128/29
 #        ingress_vip: 172.29.1.129/32
 #        peers:
-#          - 172.29.0.1
+#          - 172.29.1.1
 
   dns:
     # Kubernetes cluster domain. Do not change. This is internal to the cluster.
@@ -51,7 +51,7 @@ data:
     upstream_servers_joined: 192.168.2.85,8.8.8.8,8.8.4.4
     # NEWSITE-CHANGEME: FQDN for ingress (i.e. "publicly facing" access point)
     # Choose FQDN according to the ingress/public FQDN naming conventions at
-    # the top of this document.
+    # the top of this ocument.
     ingress_domain: dellgen10.akraino.org
 
   genesis:
