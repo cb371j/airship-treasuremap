@@ -26,18 +26,19 @@ data:
       # etcd service IP address
       service_ip: 10.96.232.136
 
-    #ip_rule:
-    #  gateway: 172.29.0.1
-#    bgp:
-#      ipv4:
-#        public_service_cidr: 172.29.1.128/29
-#        ingress_vip: 172.29.1.129/32
-#        peers:
-#          - 172.29.1.1
+    ip_rule:
+      gateway: 172.29.0.1
+    bgp:
+      ipv4:
+        public_service_cidr: 172.29.1.128/29
+        ingress_vip: 172.29.1.129/32
+        peers:
+          - 172.29.1.1
+          - 172.29.1.2
 
   dns:
     # Kubernetes cluster domain. Do not change. This is internal to the cluster.
-    cluster_domain: dellgen10.lab.akraino.org
+    cluster_domain: cluster.local
     # DNS service ip
     service_ip: 10.96.0.10
     # List of upstream DNS forwards. Verify you can reach them from your
