@@ -102,7 +102,7 @@ data:
   # including Genesis. Note Genesis won't actually be listed in this file as a
   # BaremetalNode, but the rest are.
   # This is the second "primary" control plane node after Genesis.
-  host_profile: cp_r720-primary
+  host_profile: cp_r740-primary
   metadata:
     tags:
       # NEWSITE-CHANGEME: See previous comment. Apply 'masters' tag for control
@@ -140,46 +140,11 @@ data:
     - network: calico
       address: 172.29.1.42
   # NEWSITE-CHANGEME: The next node's host profile
-  host_profile: cp_r720-primary
+  host_profile: cp_r740-primary
   metadata:
     # NEWSITE-CHANGEME: The next node's rack designation
     rack: RACK01
     # NEWSITE-CHANGEME: The next node's role desigatnion
     tags:
       - 'masters'
-...
----
-schema: 'drydock/BaremetalNode/v1'
-metadata:
-  schema: 'metadata/Document/v1'
-  # NEWSITE-CHANGEME: The next node's hostname
-  name: aknode43
-  layeringDefinition:
-    abstract: false
-    layer: site
-  storagePolicy: cleartext
-data:
-  # NEWSITE-CHANGEME: The next node's IPv4 addressing
-  addressing:
-    - network: oob
-      address: 192.168.41.43
-    - network: pxe
-      address: 172.30.2.43
-    - network: oam
-      address: 192.168.2.43
-    - network: storage
-      address: 172.31.2.43
-    - network: overlay
-      address: 10.0.102.43
-    - network: calico
-      address: 172.29.1.43
-  # NEWSITE-CHANGEME: The next node's host profile
-  # This is the third "primary" control plane profile after genesis
-  host_profile: dp_r720
-  metadata:
-    # NEWSITE-CHANGEME: The next node's rack designation
-    rack: RACK01
-    # NEWSITE-CHANGEME: The next node's role desigatnion
-    tags:
-      - 'workers'
 ...
