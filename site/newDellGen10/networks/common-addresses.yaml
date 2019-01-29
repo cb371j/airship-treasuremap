@@ -28,12 +28,12 @@ data:
 
     ip_rule:
       gateway: 172.29.0.1
-    bgp:
-      ipv4:
-        public_service_cidr: 172.29.1.128/29
+#    bgp:
+#      ipv4:
+#        public_service_cidr: 172.29.1.128/29
 #        ingress_vip: 172.29.1.129/32
-        peers:
-          - 172.29.1.1
+#        peers:
+#          - 172.29.1.1
 #          - 172.29.1.2
   dns:
     # Kubernetes cluster domain. Do not change. This is internal to the cluster.
