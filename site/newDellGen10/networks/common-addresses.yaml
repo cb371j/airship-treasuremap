@@ -34,7 +34,6 @@ data:
         ingress_vip: 172.29.1.129/32
         peers:
           - 172.29.1.1
-          - 172.29.1.2
   dns:
     # Kubernetes cluster domain. Do not change. This is internal to the cluster.
     cluster_domain: cluster.local
