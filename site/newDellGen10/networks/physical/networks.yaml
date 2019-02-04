@@ -123,7 +123,7 @@ data:
     # NEWSITE-CHANGEME: FQDN for bare metal nodes.
     # Choose FQDN according to the node FQDN naming conventions at the top of
     # this document.
-    domain: lab.akraino.org
+    domain: dellgen10.lab.akraino.org
     servers: '192.168.2.85 8.8.8.8'
 
     # List of upstream DNS forwards. Verify you can reach them from your
@@ -197,7 +197,7 @@ data:
     # NEWSITE-CHANGEME: FQDN for bare metal nodes.
     # Choose FQDN according to the node FQDN naming conventions at the top of
     # this document.
-    domain: lab.akraino.org
+    domain: dellgen10.lab.akraino.org
     # List of upstream DNS forwards. Verify you can reach them from your
     # environment. If so, you should not need to change them.
     # TODO: This should be populated via substitution from common-addresses
