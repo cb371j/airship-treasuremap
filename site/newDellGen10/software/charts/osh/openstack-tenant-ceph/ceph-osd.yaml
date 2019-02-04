@@ -24,7 +24,9 @@ data:
         node_selector_value: enabled
     conf:
       storage:
-     storage:
+        # NEWSITE-CHANGEME: The OSD count and configuration here should not need
+        # to change if your HW matches the HW used in this environment.
+        # Otherwise you may need to add or subtract disks to this list.
         osd:
           - data:
               type: block-logical
