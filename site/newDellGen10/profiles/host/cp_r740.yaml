@@ -78,14 +78,6 @@ data:
               mountpoint: '/var'
               fstype: 'ext4'
               mount_options: 'defaults'
-      sdh:
-        partitions:
-          - name: 'ceph'
-            size: '300g'
-            filesystem:
-              mountpoint: '/var/lib/ceph/journal'
-              fstype: 'ext4'
-              mount_options: 'defaults'
   platform:
     image: 'xenial'
     kernel: 'hwe-16.04'
