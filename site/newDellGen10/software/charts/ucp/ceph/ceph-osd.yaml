@@ -39,36 +39,36 @@ data:
               type: block-logical
               location: /dev/sda
             journal:
-              type: directory
-              location: /var/lib/ceph/journal/journal-sda
+              type: block-logical
+              location: /dev/sdh
           - data:
               type: block-logical
               location: /dev/sdb
             journal:
-              type: directory
-              location: /var/lib/ceph/journal/journal-sdb
+              type: block-logical
+              location: /dev/sdh
           - data:
               type: block-logical
               location: /dev/sdc
             journal:
-              type: directory
-              location: /var/lib/ceph/journal/journal-sdc
+              type: block-logical
+              location: /dev/sdh
           - data:
               type: block-logical
               location: /dev/sdd
             journal:
-              type: directory
-              location: /var/lib/ceph/journal/journal-sdd
+              type: block-logical
+              location: /dev/sdh
           - data:
               type: block-logical
               location: /dev/sde
             journal:
-              type: directory
-              location: /var/lib/ceph/journal/journal-sde
+              type: block-logical
+              location: /dev/sdh
           - data:
               type: block-logical
               location: /dev/sdf
             journal:
-              type: directory
-              location: /var/lib/ceph/journal/journal-sdf
+              type: block-logical
+              location: /dev/sdh
 ...
