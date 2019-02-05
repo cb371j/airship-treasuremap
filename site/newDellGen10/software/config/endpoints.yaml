@@ -70,11 +70,11 @@ data:
       path:
         default: /v3
       scheme:
-        default: "https"
+        default: "http"
         internal: "http"
       port:
         api:
-          default: 443
+          default: 80
           internal: 5000
     armada:
       name: armada
@@ -236,12 +236,12 @@ data:
       port:
         api:
           default: 9000
-          public: 443
+          public: 80
       path:
         default: /api/v1.0
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       host_fqdn_override:
         default: null
         public:
@@ -301,11 +301,11 @@ data:
         default: /swift/v1
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         api:
           default: 8088
-          public: 443
+          public: 80
     ceph_object_store:
       name: radosgw
       namespace: ceph
@@ -320,11 +320,11 @@ data:
         default: /auth/v1.0
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         api:
           default: 8088
-          public: 443
+          public: 80
     ceph_mon:
       namespace: ceph
       hosts:
@@ -488,11 +488,11 @@ data:
         default: /swift/v1/KEY_$(tenant_id)s
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         api:
           default: 8088
-          public: 443
+          public: 80
     ceph_object_store:
       name: radosgw
       namespace: openstack
@@ -507,11 +507,11 @@ data:
         default: /auth/v1.0
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         api:
           default: 8088
-          public: 443
+          public: 80
     oslo_db:
       hosts:
         default: mariadb
@@ -588,11 +588,11 @@ data:
       path:
         default: /v3
       scheme:
-        default: "https"
+        default: "http"
         internal: "http"
       port:
         api:
-          default: 443
+          default: 80
           internal: 5000
     glance_oslo_messaging:
       namespace: openstack
@@ -633,11 +633,11 @@ data:
         default: null
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         api:
           default: 9292
-          public: 443
+          public: 80
     image_registry:
       name: glance-registry
       hosts:
@@ -692,11 +692,11 @@ data:
         default: "/v1/%(tenant_id)s"
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         api:
           default: 8776
-          public: 443
+          public: 80
     volumev2:
       name: cinderv2
       hosts:
@@ -710,11 +710,11 @@ data:
         default: "/v2/%(tenant_id)s"
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         api:
           default: 8776
-          public: 443
+          public: 80 
     volumev3:
       name: cinderv3
       hosts:
@@ -728,11 +728,11 @@ data:
         default: "/v3/%(tenant_id)s"
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         api:
           default: 8776
-          public: 443
+          public: 80
     heat_oslo_messaging:
       namespace: openstack
       hosts:
@@ -772,11 +772,11 @@ data:
         default: "/v1/%(project_id)s"
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         api:
           default: 8004
-          public: 443
+          public: 80
     cloudformation:
       name: heat-cfn
       hosts:
@@ -790,11 +790,11 @@ data:
         default: /v1
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         api:
           default: 8000
-          public: 443
+          public: 80
     cloudwatch:
       name: heat-cloudwatch
       hosts:
@@ -850,11 +850,11 @@ data:
         default: null
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         api:
           default: 9696
-          public: 443
+          public: 80
     nova_oslo_messaging:
       namespace: openstack
       hosts:
@@ -894,13 +894,13 @@ data:
         default: "/v2/%(tenant_id)s"
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         api:
           default: 8774
-          public: 443
+          public: 80
         novncproxy:
-          default: 443
+          default: 80
     compute_metadata:
       name: nova
       hosts:
@@ -929,11 +929,11 @@ data:
         default: /vnc_auto.html
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         novnc_proxy:
           default: 6080
-          public: 443
+          public: 80
     compute_spice_proxy:
       name: nova
       hosts:
@@ -960,11 +960,11 @@ data:
         default: /
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         api:
           default: 8778
-          public: 443
+          public: 80
     dashboard:
       name: horizon
       hosts:
@@ -978,11 +978,11 @@ data:
         default: null
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         web:
           default: 80
-          public: 443
+          public: 80
 ...
 ---
 schema: pegleg/EndpointCatalogue/v1
@@ -1155,11 +1155,11 @@ data:
         default: null
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         grafana:
           default: 3000
-          public: 443
+          public: 80
     monitoring:
       name: prometheus
       namespace: osh-infra
@@ -1191,11 +1191,11 @@ data:
         default: null
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         kibana:
           default: 5601
-          public: 443
+          public: 80
     alerts:
       name: alertmanager
       namespace: osh-infra
@@ -1293,11 +1293,11 @@ data:
         default: null
       scheme:
         default: "http"
-        public: "https"
+        public: "http"
       port:
         http:
           default: 80
-          public: 443
+          public: 80
     ldap:
       hosts:
         default: ldap
