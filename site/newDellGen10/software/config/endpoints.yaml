@@ -26,33 +26,33 @@ metadata:
           pattern: DOMAIN
         - path: .ceph.ceph_object_store.host_fqdn_override.public.host
           pattern: DOMAIN
-    - src:
-        schema: deckhand/Certificate/v1
-        name: ingress-crt
-        path: .
-      dest:
-        - path: .ucp.identity.host_fqdn_override.public.tls.crt
-        - path: .ucp.shipyard.host_fqdn_override.public.tls.crt
-        - path: .ceph.object_store.host_fqdn_override.public.tls.crt
-        - path: .ceph.ceph_object_store.host_fqdn_override.public.tls.crt
-    - src:
-        schema: deckhand/CertificateAuthority/v1
-        name: ingress-ca
-        path: .
-      dest:
-        - path: .ucp.identity.host_fqdn_override.public.tls.ca
-        - path: .ucp.shipyard.host_fqdn_override.public.tls.ca
-        - path: .ceph.object_store.host_fqdn_override.public.tls.ca
-        - path: .ceph.ceph_object_store.host_fqdn_override.public.tls.ca
-    - src:
-        schema: deckhand/CertificateKey/v1
-        name: ingress-key
-        path: .
-      dest:
-        - path: .ucp.identity.host_fqdn_override.public.tls.key
-        - path: .ucp.shipyard.host_fqdn_override.public.tls.key
-        - path: .ceph.object_store.host_fqdn_override.public.tls.key
-        - path: .ceph.ceph_object_store.host_fqdn_override.public.tls.key
+#    - src:
+#        schema: deckhand/Certificate/v1
+#        name: ingress-crt
+#        path: .
+#      dest:
+#        - path: .ucp.identity.host_fqdn_override.public.tls.crt
+#        - path: .ucp.shipyard.host_fqdn_override.public.tls.crt
+#        - path: .ceph.object_store.host_fqdn_override.public.tls.crt
+#        - path: .ceph.ceph_object_store.host_fqdn_override.public.tls.crt
+#    - src:
+#        schema: deckhand/CertificateAuthority/v1
+#        name: ingress-ca
+#        path: .
+#      dest:
+#        - path: .ucp.identity.host_fqdn_override.public.tls.ca
+#        - path: .ucp.shipyard.host_fqdn_override.public.tls.ca
+#        - path: .ceph.object_store.host_fqdn_override.public.tls.ca
+#        - path: .ceph.ceph_object_store.host_fqdn_override.public.tls.ca
+#    - src:
+#        schema: deckhand/CertificateKey/v1
+#        name: ingress-key
+#        path: .
+#      dest:
+#        - path: .ucp.identity.host_fqdn_override.public.tls.key
+#        - path: .ucp.shipyard.host_fqdn_override.public.tls.key
+#        - path: .ceph.object_store.host_fqdn_override.public.tls.key
+#        - path: .ceph.ceph_object_store.host_fqdn_override.public.tls.key
 data:
   ucp:
     identity:
@@ -415,63 +415,63 @@ metadata:
           pattern: DOMAIN
         - path: .osh.volumev3.host_fqdn_override.public.host
           pattern: DOMAIN
-    - src:
-        schema: deckhand/Certificate/v1
-        name: ingress-crt
-        path: .
-      dest:
-        - path: .osh.object_store.host_fqdn_override.public.tls.crt
-        - path: .osh.ceph_object_store.host_fqdn_override.public.tls.crt
-        - path: .osh.identity.host_fqdn_override.public.tls.crt
-        - path: .osh.orchestration.host_fqdn_override.public.tls.crt
-        - path: .osh.cloudformation.host_fqdn_override.public.tls.crt
-        - path: .osh.dashboard.host_fqdn_override.public.tls.crt
-        - path: .osh.image.host_fqdn_override.public.tls.crt
-        - path: .osh.volume.host_fqdn_override.public.tls.crt
-        - path: .osh.volumev2.host_fqdn_override.public.tls.crt
-        - path: .osh.volumev3.host_fqdn_override.public.tls.crt
-        - path: .osh.compute.host_fqdn_override.public.tls.crt
-        - path: .osh.compute_novnc_proxy.host_fqdn_override.public.tls.crt
-        - path: .osh.placement.host_fqdn_override.public.tls.crt
-        - path: .osh.network.host_fqdn_override.public.tls.crt
-    - src:
-        schema: deckhand/CertificateAuthority/v1
-        name: ingress-ca
-        path: .
-      dest:
-        - path: .osh.object_store.host_fqdn_override.public.tls.ca
-        - path: .osh.ceph_object_store.host_fqdn_override.public.tls.ca
-        - path: .osh.identity.host_fqdn_override.public.tls.ca
-        - path: .osh.orchestration.host_fqdn_override.public.tls.ca
-        - path: .osh.cloudformation.host_fqdn_override.public.tls.ca
-        - path: .osh.dashboard.host_fqdn_override.public.tls.ca
-        - path: .osh.image.host_fqdn_override.public.tls.ca
-        - path: .osh.volume.host_fqdn_override.public.tls.ca
-        - path: .osh.volumev2.host_fqdn_override.public.tls.ca
-        - path: .osh.volumev3.host_fqdn_override.public.tls.ca
-        - path: .osh.compute.host_fqdn_override.public.tls.ca
-        - path: .osh.compute_novnc_proxy.host_fqdn_override.public.tls.ca
-        - path: .osh.placement.host_fqdn_override.public.tls.ca
-        - path: .osh.network.host_fqdn_override.public.tls.ca
-    - src:
-        schema: deckhand/CertificateKey/v1
-        name: ingress-key
-        path: .
-      dest:
-        - path: .osh.object_store.host_fqdn_override.public.tls.key
-        - path: .osh.ceph_object_store.host_fqdn_override.public.tls.key
-        - path: .osh.identity.host_fqdn_override.public.tls.key
-        - path: .osh.orchestration.host_fqdn_override.public.tls.key
-        - path: .osh.cloudformation.host_fqdn_override.public.tls.key
-        - path: .osh.dashboard.host_fqdn_override.public.tls.key
-        - path: .osh.image.host_fqdn_override.public.tls.key
-        - path: .osh.volume.host_fqdn_override.public.tls.key
-        - path: .osh.volumev2.host_fqdn_override.public.tls.key
-        - path: .osh.volumev3.host_fqdn_override.public.tls.key
-        - path: .osh.compute.host_fqdn_override.public.tls.key
-        - path: .osh.compute_novnc_proxy.host_fqdn_override.public.tls.key
-        - path: .osh.placement.host_fqdn_override.public.tls.key
-        - path: .osh.network.host_fqdn_override.public.tls.key
+#    - src:
+#        schema: deckhand/Certificate/v1
+#        name: ingress-crt
+#        path: .
+#      dest:
+#        - path: .osh.object_store.host_fqdn_override.public.tls.crt
+#        - path: .osh.ceph_object_store.host_fqdn_override.public.tls.crt
+#        - path: .osh.identity.host_fqdn_override.public.tls.crt
+#        - path: .osh.orchestration.host_fqdn_override.public.tls.crt
+#        - path: .osh.cloudformation.host_fqdn_override.public.tls.crt
+#        - path: .osh.dashboard.host_fqdn_override.public.tls.crt
+#        - path: .osh.image.host_fqdn_override.public.tls.crt
+#        - path: .osh.volume.host_fqdn_override.public.tls.crt
+#        - path: .osh.volumev2.host_fqdn_override.public.tls.crt
+#        - path: .osh.volumev3.host_fqdn_override.public.tls.crt
+#        - path: .osh.compute.host_fqdn_override.public.tls.crt
+#        - path: .osh.compute_novnc_proxy.host_fqdn_override.public.tls.crt
+#        - path: .osh.placement.host_fqdn_override.public.tls.crt
+#        - path: .osh.network.host_fqdn_override.public.tls.crt
+#    - src:
+#        schema: deckhand/CertificateAuthority/v1
+#        name: ingress-ca
+#        path: .
+#      dest:
+#        - path: .osh.object_store.host_fqdn_override.public.tls.ca
+#        - path: .osh.ceph_object_store.host_fqdn_override.public.tls.ca
+#        - path: .osh.identity.host_fqdn_override.public.tls.ca
+#        - path: .osh.orchestration.host_fqdn_override.public.tls.ca
+#        - path: .osh.cloudformation.host_fqdn_override.public.tls.ca
+#        - path: .osh.dashboard.host_fqdn_override.public.tls.ca
+#        - path: .osh.image.host_fqdn_override.public.tls.ca
+#        - path: .osh.volume.host_fqdn_override.public.tls.ca
+#        - path: .osh.volumev2.host_fqdn_override.public.tls.ca
+#        - path: .osh.volumev3.host_fqdn_override.public.tls.ca
+#        - path: .osh.compute.host_fqdn_override.public.tls.ca
+#        - path: .osh.compute_novnc_proxy.host_fqdn_override.public.tls.ca
+#        - path: .osh.placement.host_fqdn_override.public.tls.ca
+#        - path: .osh.network.host_fqdn_override.public.tls.ca
+#    - src:
+#        schema: deckhand/CertificateKey/v1
+#        name: ingress-key
+#        path: .
+#      dest:
+#        - path: .osh.object_store.host_fqdn_override.public.tls.key
+#        - path: .osh.ceph_object_store.host_fqdn_override.public.tls.key
+#        - path: .osh.identity.host_fqdn_override.public.tls.key
+#        - path: .osh.orchestration.host_fqdn_override.public.tls.key
+#        - path: .osh.cloudformation.host_fqdn_override.public.tls.key
+#        - path: .osh.dashboard.host_fqdn_override.public.tls.key
+#        - path: .osh.image.host_fqdn_override.public.tls.key
+#        - path: .osh.volume.host_fqdn_override.public.tls.key
+#        - path: .osh.volumev2.host_fqdn_override.public.tls.key
+#        - path: .osh.volumev3.host_fqdn_override.public.tls.key
+#        - path: .osh.compute.host_fqdn_override.public.tls.key
+#        - path: .osh.compute_novnc_proxy.host_fqdn_override.public.tls.key
+#        - path: .osh.placement.host_fqdn_override.public.tls.key
+#        - path: .osh.network.host_fqdn_override.public.tls.key
 data:
   osh:
     object_store:
@@ -1005,30 +1005,30 @@ metadata:
           pattern: DOMAIN
         - path: .osh_infra.nagios.host_fqdn_override.public.host
           pattern: DOMAIN
-    - src:
-        schema: deckhand/Certificate/v1
-        name: ingress-crt
-        path: .
-      dest:
-        - path: .osh_infra.kibana.host_fqdn_override.public.tls.crt
-        - path: .osh_infra.grafana.host_fqdn_override.public.tls.crt
-        - path: .osh_infra.nagios.host_fqdn_override.public.tls.crt
-    - src:
-        schema: deckhand/CertificateAuthority/v1
-        name: ingress-ca
-        path: .
-      dest:
-        - path: .osh_infra.kibana.host_fqdn_override.public.tls.ca
-        - path: .osh_infra.grafana.host_fqdn_override.public.tls.ca
-        - path: .osh_infra.nagios.host_fqdn_override.public.tls.ca
-    - src:
-        schema: deckhand/CertificateKey/v1
-        name: ingress-key
-        path: .
-      dest:
-        - path: .osh_infra.kibana.host_fqdn_override.public.tls.key
-        - path: .osh_infra.grafana.host_fqdn_override.public.tls.key
-        - path: .osh_infra.nagios.host_fqdn_override.public.tls.key
+#    - src:
+#        schema: deckhand/Certificate/v1
+#        name: ingress-crt
+#        path: .
+#      dest:
+#        - path: .osh_infra.kibana.host_fqdn_override.public.tls.crt
+#        - path: .osh_infra.grafana.host_fqdn_override.public.tls.crt
+#        - path: .osh_infra.nagios.host_fqdn_override.public.tls.crt
+#    - src:
+#        schema: deckhand/CertificateAuthority/v1
+#        name: ingress-ca
+#        path: .
+#      dest:
+#        - path: .osh_infra.kibana.host_fqdn_override.public.tls.ca
+#        - path: .osh_infra.grafana.host_fqdn_override.public.tls.ca
+#        - path: .osh_infra.nagios.host_fqdn_override.public.tls.ca
+#    - src:
+#        schema: deckhand/CertificateKey/v1
+#        name: ingress-key
+#        path: .
+#      dest:
+#        - path: .osh_infra.kibana.host_fqdn_override.public.tls.key
+#        - path: .osh_infra.grafana.host_fqdn_override.public.tls.key
+#        - path: .osh_infra.nagios.host_fqdn_override.public.tls.key
     - src:
         schema: pegleg/CommonAddresses/v1
         name: common-addresses
