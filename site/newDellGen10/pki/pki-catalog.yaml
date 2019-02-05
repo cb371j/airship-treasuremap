@@ -76,14 +76,6 @@ data:
             - 172.29.1.42
           groups:
             - system:nodes
-        - document_name: kubelet-aknode43
-          common_name: system:node:aknode43
-          hosts:
-            - aknode43
-            - 192.168.2.43
-            - 172.29.1.43
-          groups:
-            - system:nodes
         # End node list
         - document_name: scheduler
           description: Service certificate for Kubernetes scheduler
@@ -168,16 +160,6 @@ data:
             - localhost
             - kubernetes-etcd.kube-system.svc.cluster.local
             - 10.96.0.2
-        - document_name: kubernetes-etcd-aknode43
-          common_name: kubernetes-etcd-aknode43
-          hosts:
-            - aknode43
-            - 192.168.2.43
-            - 172.29.1.43
-            - 127.0.0.1
-            - localhost
-            - kubernetes-etcd.kube-system.svc.cluster.local
-            - 10.96.0.2
         # End node list
     kubernetes-etcd-peer:
       certificates:
@@ -219,16 +201,6 @@ data:
             - aknode42
             - 192.168.2.42
             - 172.29.1.42
-            - 127.0.0.1
-            - localhost
-            - kubernetes-etcd.kube-system.svc.cluster.local
-            - 10.96.0.2
-        - document_name: kubernetes-etcd-aknode43-peer
-          common_name: kubernetes-etcd-aknode43-peer
-          hosts:
-            - aknode43
-            - 192.168.2.43
-            - 172.29.1.43
             - 127.0.0.1
             - localhost
             - kubernetes-etcd.kube-system.svc.cluster.local
@@ -280,15 +252,6 @@ data:
             - 127.0.0.1
             - localhost
             - 10.96.232.136
-        - document_name: calico-etcd-aknode43
-          common_name: calico-etcd-aknode43
-          hosts:
-            - aknode43
-            - 192.168.2.43
-            - 172.29.1.43
-            - 127.0.0.1
-            - localhost
-            - 10.96.232.136
         - document_name: calico-node
           common_name: calico-node
         # End node list
@@ -321,15 +284,6 @@ data:
             - aknode42
             - 192.168.2.42
             - 172.29.1.42
-            - 127.0.0.1
-            - localhost
-            - 10.96.232.136
-        - document_name: calico-etcd-aknode43-peer
-          common_name: calico-etcd-aknode43-peer
-          hosts:
-            - aknode43
-            - 192.168.2.43
-            - 172.29.1.43
             - 127.0.0.1
             - localhost
             - 10.96.232.136
