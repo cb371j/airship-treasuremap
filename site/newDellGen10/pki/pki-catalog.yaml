@@ -50,6 +50,7 @@ data:
             - aknode40
             - 192.168.2.40
             - 172.29.1.40
+            - 172.30.2.40
           groups:
             - system:nodes
         - document_name: kubelet-aknode40
@@ -58,6 +59,7 @@ data:
             - aknode40
             - 192.168.2.40
             - 172.29.1.40
+            - 172.30.2.40
           groups:
             - system:nodes
         - document_name: kubelet-aknode41
@@ -253,7 +255,7 @@ data:
             - localhost
             - 10.96.232.136
         - document_name: calico-node
-          common_name: calico-node
+          common_name: calcico-node
         # End node list
     calico-etcd-peer:
       description: Certificates for Calico etcd clients
