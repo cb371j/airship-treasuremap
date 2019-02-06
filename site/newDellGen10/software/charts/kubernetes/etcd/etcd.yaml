@@ -19,6 +19,7 @@ metadata:
     # list) on which k8s etcd will run and will need certs. It is assumed
     # that Airship sites will have 4 control plane nodes, so this should not need to
     # change for a new site.
+    # aknode40 genesis
     - src:
         schema: pegleg/CommonAddresses/v1
         name: common-addresses
@@ -50,6 +51,7 @@ metadata:
     # genesis node, but `genesis` is reference here in the certificate names
     # because of certain Promenade assumptions that may be addressed in the
     # future. Therefore `genesis` is used instead of `cab23-r720-11` here.
+    # genesis: aknode40
     - src:
         schema: deckhand/Certificate/v1
         name: kubernetes-etcd-genesis
