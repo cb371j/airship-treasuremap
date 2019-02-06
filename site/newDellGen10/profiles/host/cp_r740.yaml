@@ -275,7 +275,7 @@ data:
       kubernetes-apiserver: enabled
       kubernetes-controller-manager: enabled
       # kubernetes-etcd: enabled
-      kubernetes-scheduler: enabled
+      #kubernetes-scheduler: enabled
       tiller-helm: enabled
       # kube-etcd: enabled
       calico-policy: enabled
